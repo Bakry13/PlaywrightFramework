@@ -219,13 +219,13 @@ https://code.visualstudio.com/download
         npx allure generate {report path} -o {generation path} --clean
 
 #### 2- Open the report:
-
+s
         npx allure open {generated report path}
 
 ## `Project Structure:`
 *The below is a package diagram for the implemented project structure "Files and folders"*
 
-![Screenshot](PlaywrightFramework.PNG)
+![Screenshot](PlaywrightFramework.jpg)
 
 ## `General instructions and guidelines:`
 

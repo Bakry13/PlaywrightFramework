@@ -29,7 +29,7 @@ https://code.visualstudio.com/download
 
 ### A. Usage of Playwright advantages:
 
-#### 1- Waits and timout adjustomet
+#### 1- Waits and timout adjustment
 * Total run timeout
 * Action timeout
 * Expect timeout
@@ -56,7 +56,7 @@ https://code.visualstudio.com/download
 * Adding usable API URLs
 * Applying api tests with different methods using simple examples
 
-#### 8- Vidual test
+#### 8- Visual test
 * Applying visual tests in different pages using simple examples
 
 #### 9- Tests examples
@@ -68,7 +68,7 @@ https://code.visualstudio.com/download
 * Separating pages contents in different modules to enhance readability and maintainability
 
 #### 1- Project structure adjustment to modules
-* Deviding the project into modules according to its functionality and usage
+* Dividing the project into modules according to its functionality and usage
 
 #### 2- Using data driven framework
 * Separating test data to external files to enhance readability and maintainability

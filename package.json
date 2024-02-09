@@ -1,13 +1,50 @@
 {
   "name": "playwright",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:e2e": "npx playwright test tests/",
+    "test:staging": "npx playwright test --config=staging.config.ts",
+    "test:test": "npx playwright test --config=test.config.ts",
+    "test:e2e:headed": "npx playwright test tests/specs --headed",
+    "test:e2e:smoke": "npx playwright test tests/specs --grep @smoke",
+    "test:e2e:non-smoke": "npx playwright test tests/specs --grep-invert @smoke",
+    "test:e2e:all": "npx playwright test tests/specs --project=all-browsers-and-tests",
+    "test:e2e:firefox-only": "npx playwright test tests/specs --project=firefox",
+    "test:cucumber": "cucumber-js test",
+    "test:generateAllure": "npx allure generate allure-results -o allure-report --clean",
+    "test:OpenAllure": "npx allure open allure-report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.31.2"
-  }
+    "@cucumber/cucumber": "^10.3.1",
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.10.6",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "allure-commandline": "^2.27.0",
+    "allure-playwright": "^2.12.0",
+    "eslint": "^8.56.0",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.3",
+    "msnodesqlv8": "^2.7.0",
+    "mysql2": "^3.9.0",
+    "xlsx": "^0.18.5"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bakry13/PlaywrightFramework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bakry13/PlaywrightFramework/issues"
+  },
+  "homepage": "https://github.com/Bakry13/PlaywrightFramework#readme",
+  "description": "- The below description is a summary to build a solid test automation framework using playwright test automation tool.\r - You can use this framework to be a base for your test automation project to start your automated test cases.\r - You can find more details in playwright official website documentation:\r https://playwright.dev/docs/intro"
 }

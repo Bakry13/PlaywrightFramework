@@ -23,7 +23,7 @@ https://code.visualstudio.com/download
 
 #### 2- Run the below command to install the required dependancies
 
-        npm init
+        npm install
 
 ## `Features:`
 

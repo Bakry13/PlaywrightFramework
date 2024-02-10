@@ -219,7 +219,7 @@ https://code.visualstudio.com/download
         npx allure generate {report path} -o {generation path} --clean
 
 #### 2- Open the report:
-s
+
         npx allure open {generated report path}
 
 ## `Project Structure:`

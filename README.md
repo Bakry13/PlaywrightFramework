@@ -1,8 +1,8 @@
 # Playwright Framework
 
-*- The below description is a summary to build a solid test automation framework using playwright test automation tool and typescript programming language.*
+*- This project is a base project to build a solid test automation framework using playwright test automation tool and typescript programming language.*
 
-*- You can use this framework to be a base for your test automation project to start your automated test cases.*
+*- You can use this framework to be a start point for your test automation project to write your automated test cases.*
 
 *- You can find more details in playwright official website documentation:*
 https://playwright.dev/docs/intro

@@ -116,41 +116,43 @@ https://code.visualstudio.com/download
 
 #### 4- tests/features/:
 * Cucumber features which contain test scenarios
+
+#### 5- tests/steps/:
 * Cucumber steps which contain the implementation of test scenarios
 
-#### 5- tests/test-data/:
+#### 6- tests/test-data/:
 * All test data files with different types (json format, csv and excel sheets)
 
-#### 6- tests/utilities/readers/:
+#### 7- tests/utilities/readers/:
 * All test data readers for different file types (csv and excel, ...)
 
-#### 7- tests/utilities/setup/:
+#### 8- tests/utilities/setup/:
 * global-setup.ts: for Global Setup method implementation
 * env-setup.ts: for adjusting the data needed for every environment (test, preprod and production)
 
-#### 8- tests/utilities/URLs/:
+#### 9- tests/utilities/URLs/:
 * environmentBaseUrl.ts: base URL for every environment
 * uiPages.ts: all routs and endpoints for frontend pages
 * apiEndpoints.ts: all routs and api endpoints for API tests
 
-#### 9- tests/utilities/:
+#### 10- tests/utilities/:
 * assertions.ts: general implementation for used assertions in different modules
 * db-actions.ts: configurations and functions needed for mysql database conection
 * paths.ts: all used files paths in different modules (data files, screenshots, ...)
 * screenshot.css: visual testing configuration for dynamic pages
 
-#### 10- reports/:
+#### 11- reports/:
 * Allure report data
 * Cucumber report
 * Other needed reports
 
-#### 11- playwright-report/:
+#### 12- playwright-report/:
 * Playwright default reports (html, line, dot, json, junit, ...)
 
-#### 12- test-results/:
+#### 13- test-results/:
 * All results of test cases runs (screenshots, vidos, trace, ...)
 
-#### 13- node_modules/:
+#### 14- node_modules/:
 * All downloaded libraries and modules
 
 ### B. Project configuration files:

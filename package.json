@@ -46,5 +46,5 @@
     "url": "https://github.com/Bakry13/PlaywrightFramework/issues"
   },
   "homepage": "https://github.com/Bakry13/PlaywrightFramework#readme",
-  "description": "- The below description is a summary to build a solid test automation framework using playwright test automation tool.\r - You can use this framework to be a base for your test automation project to start your automated test cases.\r - You can find more details in playwright official website documentation:\r https://playwright.dev/docs/intro"
+  "description": "- This project is a base project to build a solid test automation framework using playwright test automation tool.\r - You can use this framework to be a start point for your test automation project to write your automated test cases.\r - You can find more details in playwright official website documentation:\r https://playwright.dev/docs/intro"
 }

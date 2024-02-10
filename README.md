@@ -170,7 +170,7 @@ https://code.visualstudio.com/download
 #### 3- package-lock.json:
 * Detailed Installed dependencies
 
-#### 4- .gitIgnore:
+#### 4- .gitignore:
 * All files and folders that needs to be excluded from pushing to the version control
 
 #### 5- .env:

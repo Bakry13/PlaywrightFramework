@@ -12,8 +12,8 @@
     "test:e2e:all": "npx playwright test tests/specs --project=all-browsers-and-tests",
     "test:e2e:firefox-only": "npx playwright test tests/specs --project=firefox",
     "test:cucumber": "cucumber-js test",
-    "test:generateAllure": "npx allure generate allure-results -o allure-report --clean",
-    "test:OpenAllure": "npx allure open allure-report"
+    "test:generateAllure": "npx allure generate reports/allure-results -o reports/allure-report --clean",
+    "test:OpenAllure": "npx allure open reports/allure-report"
   },
   "keywords": [],
   "author": "",

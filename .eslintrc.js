@@ -29,5 +29,6 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
+        "semi": [2, "always"] //error should be raised if we missed semicolon in the last of the line "0=off", "1=warning", "2-error"
     }
-}
+};

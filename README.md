@@ -224,6 +224,14 @@ https://code.visualstudio.com/download
 
         npx allure open {generated report path}
 
+### D. Using Eslint to make static analysis:
+
+#### 1- Run Eslint command:
+
+        npx eslint {file path} 
+
+#### 2- Check the errors across the files
+
 ## `Project Structure:`
 *The below is a package diagram for the implemented project structure "Files and folders"*
 

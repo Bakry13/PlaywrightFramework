@@ -224,7 +224,7 @@ https://code.visualstudio.com/download
 
         npx allure open {generated report path}
 
-### D. Using Eslint to make static analysis:
+### E. Using Eslint to make static analysis:
 
 #### 1- Run Eslint command:
 

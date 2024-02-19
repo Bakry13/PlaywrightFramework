@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 import envSetup from '../../utilities/setup/env-setup';
 import apiEndpoints from '../../utilities/URLs/apiEndpoints';
-import userBody from '../../pages/api/user-body'
-import users from '../../pages/api/users'
+import userBody from '../../pages/api/user-body';
+import users from '../../pages/api/users';
 
 //==========exclude test file from global setup cookies==========
 test.use({storageState:{cookies:[],origins:[]}});
@@ -49,4 +49,4 @@ test.describe('Users API test',() =>{
         expect(postUserBody.id).toBe(101);
     });
 }
-)
+);

@@ -62,4 +62,4 @@ test.describe('Login page test',() =>{
             await homePage.assertWebsiteLogoExist();
         });
     }
-)
+);

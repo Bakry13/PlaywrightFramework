@@ -22,10 +22,10 @@ connection.connect((error) => {
 function runQuery(statement) {
     return new Promise((resolve, reject) => {
         connection.query(statement, (err, result) => {
-            if (err) throw err
+            if (err) throw err;
             connection.end(); // close the MySQL connection
             return resolve(result);
-        })
+        });
     });
 }
 

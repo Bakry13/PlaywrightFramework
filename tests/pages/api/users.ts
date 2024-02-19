@@ -14,4 +14,4 @@ let userHeaders =  {
   'Custom-Header': 'my_custom_value'
 };
 
-export default { userBody, userParam, userHeaders }
+export default { userBody, userParam, userHeaders };

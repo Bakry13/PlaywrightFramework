@@ -18,7 +18,7 @@ function getBaseURL(config: FullConfig) {
 function getEnvURL() {
     const env = process.env.ENV!;
     if (env == 'staging') {
-        return baseEnvUrl.staging.home}
+        return baseEnvUrl.staging.home;}
     else{
         return baseEnvUrl.test.home;
     }
@@ -27,7 +27,7 @@ function getEnvURL() {
 function getAPIEnvURL() {
     const env = process.env.ENV!;
     if (env == 'staging') {
-        return baseEnvUrl.staging.api}
+        return baseEnvUrl.staging.api;}
     else{
         return baseEnvUrl.test.api;
     }

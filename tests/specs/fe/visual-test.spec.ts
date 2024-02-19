@@ -31,4 +31,4 @@ test.describe('Visual test',() =>{
         await expect(page).toHaveScreenshot();
         });
     }
-)
+);

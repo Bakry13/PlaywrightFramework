@@ -29,6 +29,12 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
-        "semi": [2, "always"] //error should be raised if we missed semicolon in the last of the line "0=off", "1=warning", "2-error"
+        "semi": [2, "always"], //error should be raised if we missed semicolon in the last of the line "0=off", "1=warning", "2-error"
+        "@typescript-eslint/prefer-as-const": "off", //off - warn or error
+        "prefer-const": "off",
+        "no-empty": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-var-requires": "off"
     }
 };

@@ -32,7 +32,6 @@
   "dependencies": {
     "csv-parse": "^5.5.3",
     "dotenv": "^16.4.1",
-    "msnodesqlv8": "^2.7.0",
     "mysql2": "^3.9.0",
     "xlsx": "^0.18.5"
   },

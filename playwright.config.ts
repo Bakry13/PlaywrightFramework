@@ -69,6 +69,10 @@ export default defineConfig({
     storageState: 'storageState.json',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     viewport: {width:1920, height:1080},
+    // launchOptions: {
+    //   // ... other options
+    //   args: ['--start-maximized'],
+    // },
     trace: 'on-first-retry',
     actionTimeout:6000, 
     navigationTimeout:30000,

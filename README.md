@@ -109,7 +109,7 @@ https://code.visualstudio.com/download
 
 #### 2- tests/pages/:
 * All FE pages
-* General used request bodies, params and headers for APIs
+* General used endpoints requests, request bodies, params and headers for APIs
 
 #### 3- tests/fixtures/:
 * All used fixtures according to test groups

@@ -46,9 +46,7 @@ export class LoginPage{
     }
 
     async checkLoggedIn(){
-        try {
-            await this.assertProfileIconExist();
-        } catch (error: any) {}  
+        await this.assertProfileIconExist();
     }
     //===========================Assertions========================
     async assertProfileIconExist() {
@@ -62,7 +60,7 @@ export class LoginPage{
     async assertLoginButtonText(language:string) {
         // await this.page.waitForTimeout(2000); //static wait for 2s
         await this.page.waitForSelector(this.loginButtonSelector, { state: 'visible' }); //Wait for a specific element to be visible
-        assertions.assertElementText(this.login_btn,this.loginButtonText, language);
+        await assertions.assertElementText(this.login_btn,this.loginButtonText, language);
     }
 }
 

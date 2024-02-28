@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import usersEndpoints from '../../pages/api/users-endpoints';
+import usersEndpoints from '../../api/endpoints/users-endpoints';
 
 //==========exclude test file from global setup cookies==========
 test.use({storageState:{cookies:[],origins:[]}});

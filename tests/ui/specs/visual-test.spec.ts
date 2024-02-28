@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
-import LoginPage from '../../pages/fe/login-page';
+import LoginPage from '../../ui/pages/login-page';
 import envSetup from '../../utilities/setup/env-setup';
-import HomePage from '../../pages/fe/home-page';
+import HomePage from '../../ui/pages/home-page';
 
 // To update the screenshot you can use this command "npx playwright test --update-snapshots"
 //==========exclude test from global setup cookies==========

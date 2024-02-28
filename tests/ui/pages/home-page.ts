@@ -1,4 +1,5 @@
 import { expect, type Locator, type Page} from '@playwright/test';
+import assertions from '../../utilities/assertions';
 
 export class HomePage{
     //===========================Locators=====================
@@ -14,9 +15,7 @@ export class HomePage{
     }
     //===========================Methods========================
     async checkLoggedIn(){
-        try {
-            await this.assertProfileIconExist();
-        } catch (error: any) {}  
+        await this.assertProfileIconExist();
     }
     //===========================Assertions========================
     async assertProfileIconExist() {

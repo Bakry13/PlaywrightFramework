@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import LoginPage from '../../pages/fe/login-page';
-import HomePage from '../../pages/fe/home-page';
+import LoginPage from '../../ui/pages/login-page';
+import HomePage from '../../ui/pages/home-page';
 import envSetup from '../../utilities/setup/env-setup';
 
 //==========exclude test from global setup cookies==========

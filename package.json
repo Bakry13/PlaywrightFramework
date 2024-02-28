@@ -4,13 +4,14 @@
   "main": "index.js",
   "scripts": {
     "test:e2e": "npx playwright test tests/",
+    "test:api": "npx playwright test tests --config=api.config.ts",
     "test:staging": "npx playwright test --config=staging.config.ts",
     "test:test": "npx playwright test --config=test.config.ts",
-    "test:e2e:headed": "npx playwright test tests/specs --headed",
-    "test:e2e:smoke": "npx playwright test tests/specs --grep @smoke",
-    "test:e2e:non-smoke": "npx playwright test tests/specs --grep-invert @smoke",
-    "test:e2e:all": "npx playwright test tests/specs --project=all-browsers-and-tests",
-    "test:e2e:firefox-only": "npx playwright test tests/specs --project=firefox",
+    "test:e2e:headed": "npx playwright test tests/ui --headed",
+    "test:e2e:smoke": "npx playwright test tests/ui --grep @smoke",
+    "test:e2e:non-smoke": "npx playwright test tests/ui --grep-invert @smoke",
+    "test:ui": "npx playwright test tests/ui --project=all-browsers-and-tests",
+    "test:e2e:firefox-only": "npx playwright test tests/ui --project=firefox",
     "test:cucumber": "cucumber-js test",
     "test:generateAllure": "npx allure generate reports/allure-results -o reports/allure-report --clean",
     "test:OpenAllure": "npx allure open reports/allure-report"
@@ -32,6 +33,7 @@
   "dependencies": {
     "csv-parse": "^5.5.3",
     "dotenv": "^16.4.1",
+    "msnodesqlv8": "^2.7.0",
     "mysql2": "^3.9.0",
     "xlsx": "^0.18.5"
   },
@@ -46,5 +48,5 @@
     "url": "https://github.com/Bakry13/PlaywrightFramework/issues"
   },
   "homepage": "https://github.com/Bakry13/PlaywrightFramework#readme",
-  "description": "- This project is a base project to build a solid test automation framework using playwright test automation tool.\r - You can use this framework to be a start point for your test automation project to write your automated test cases.\r - You can find more details in playwright official website documentation:\r https://playwright.dev/docs/intro"
+  "description": "- TThis project is a base project to build a solid test automation framework using playwright test automation tool.\r - You can use this framework to be a start point for your test automation project to write your automated test cases.\r - You can find more details in playwright official website documentation:\r https://playwright.dev/docs/intro"
 }

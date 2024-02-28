@@ -1,5 +1,5 @@
 import { chromium, FullConfig } from "@playwright/test";
-import LoginPage from "../../pages/fe/login-page";
+import LoginPage from "../../ui/pages/login-page";
 import uiPages from "../URLs/uiPages";
 
 async function globalSetup(config: FullConfig) {

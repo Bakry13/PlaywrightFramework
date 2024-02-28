@@ -6,13 +6,23 @@ import baseEnvUrl from './tests/utilities/URLs/environmentBaseUrl';
  * https://github.com/motdotla/dotenv
  */
 require('dotenv').config();
+/**
+ * Report portal configuration for CI/CD report generation
+ * https://github.com/reportportal/agent-js-playwright
+ */
+const RPconfig = {
+  apiKey: '00000000-0000-0000-0000-000000000000',
+  endpoint: 'https://your.reportportal.server/api/v1',
+  project: 'Your reportportal project name',
+  launch: 'Your launch name',
+};
 
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
 
 export default defineConfig({
-  testDir: './tests/specs/api',
+  testDir: './tests/api',
   /* Run tests in files in parallel */
   fullyParallel: false,
   /* Retry */
@@ -23,13 +33,29 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [["html"],["allure-playwright", {outputFolder: "./reports/allure-results"}]],
+  // reporter: 'html',
+  //for multiple reporter view
+  // reporter: [
+  //   ['allure-playwright', {
+  //      detail: true,
+  //      outputFolder: "./reports/allure-results",
+  //      suiteTitle: false,
+  //   }],
+  //   ['html', { open: 'never' }, { outputFolder: 'test-results' }, { attachmentsBaseURL: 'https://external-storage.com/' }],
+  //   ['@reportportal/agent-js-playwright', RPconfig],
+  //   ['line'],
+  //   ['list', { printSteps: true }],
+  //   ['dot'],
+  //   ['junit'],
+  //   ['json', {  outputFile: 'test-results.json' }]
+  // ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
  //Global setup for authentication firstly
   // globalSetup: require.resolve('./tests/utilities/setup/global-setup'),
   //Default wait is 5s
   expect: {
-    timeout: 7000, //timeout for validation
+    timeout: 1000, //timeout for validation
   },
   timeout: 60*2*1000, //General timeout for the whole run
   use: {
@@ -40,15 +66,15 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     viewport: {width:1920, height:1080},
     trace: 'on-first-retry',
-    actionTimeout:6000, 
-    navigationTimeout:30000,
+    actionTimeout:5000, 
+    // navigationTimeout:30000,
     screenshot: 'only-on-failure',
     // headless: false,
     baseURL: process.env.ENV === 'production' 
-      ? baseEnvUrl.production.home
+      ? baseEnvUrl.production.api
       : process.env.ENV === 'staging' 
-        ? baseEnvUrl.staging.home
-        : baseEnvUrl.test.home
+        ? baseEnvUrl.staging.api
+        : baseEnvUrl.test.api
   },
 
   /* Configure projects for major browsers */

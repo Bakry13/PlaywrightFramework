@@ -1,7 +1,7 @@
 import { test as base } from '@playwright/test';
-import LoginPage from '../pages/fe/login-page';
-import HomePage from '../pages/fe/home-page';
-import envSetup from '../utilities/setup/env-setup';
+import LoginPage from '../pages/login-page';
+import HomePage from '../pages/home-page';
+import envSetup from '../../utilities/setup/env-setup';
 
 // Declare the types of your fixtures.
 type MyFixtures = {

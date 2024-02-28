@@ -1,5 +1,5 @@
 // const sql = require("mssql/msnodesqlv8");   // need to install (msnodesqlv8) library using this command "npm install mssql --save" and "npm install msnodesqlv8@^2" or "npm install msnodesqlv8 --save"
-const mysql = require('mysql2'); //need to install (mysql2) library using this command "npm install mysql2"
+import * as mysql from 'mysql2'; //need to install (mysql2) library using this command "npm install mysql2"
 
 // create a new MySQL connection
 const connection = mysql.createConnection({

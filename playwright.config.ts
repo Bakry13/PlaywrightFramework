@@ -52,7 +52,7 @@ export default defineConfig({
   // ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
  //Global setup for authentication firstly
-  globalSetup: require.resolve('./tests/utilities/setup/global-setup'),
+  // globalSetup: require.resolve('./tests/utilities/setup/global-setup'),
   //Default wait is 5s
   expect: {
     timeout: 7000, //timeout for validation

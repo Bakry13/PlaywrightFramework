@@ -104,55 +104,63 @@ https://code.visualstudio.com/download
 
 ### A. Folders and directories:
 
-#### 1- tests/specs/:
-* All FE and API test cases scripts
+#### 1- tests/ui/specs/:
+* All frontend test cases scripts
 
-#### 2- tests/pages/:
-* All FE pages
+#### 2- tests/api/specs/:
+* All API test cases scripts
+
+#### 3- tests/ui/pages/:
+* All frontend pages
+
+#### 4- tests/api/endpoints/:
 * General used endpoints requests, request bodies, params and headers for APIs
 
-#### 3- tests/fixtures/:
-* All used fixtures according to test groups
+#### 5- tests/ui/fixtures/:
+* All used frontend fixtures according to test groups
 
-#### 4- tests/features/:
+#### 6- tests/api/fixtures/:
+* All used API fixtures according to test groups
+
+#### 7- tests/features/:
 * Cucumber features which contain test scenarios
 
-#### 5- tests/steps/:
+#### 8- tests/steps/:
 * Cucumber steps which contain the implementation of test scenarios
 
-#### 6- tests/test-data/:
+#### 9- tests/test-data/:
 * All test data files with different types (json format, csv and excel sheets)
 
-#### 7- tests/utilities/readers/:
+#### 10- tests/utilities/readers/:
 * All test data readers for different file types (csv and excel, ...)
 
-#### 8- tests/utilities/setup/:
+#### 11- tests/utilities/setup/:
 * global-setup.ts: for Global Setup method implementation
 * env-setup.ts: for adjusting the data needed for every environment (test, preprod and production)
 
-#### 9- tests/utilities/URLs/:
+#### 12- tests/utilities/URLs/:
 * environmentBaseUrl.ts: base URL for every environment
 * uiPages.ts: all routs and endpoints for frontend pages
 * apiEndpoints.ts: all routs and api endpoints for API tests
 
-#### 10- tests/utilities/:
+#### 13- tests/utilities/:
 * assertions.ts: general implementation for used assertions in different modules
 * db-actions.ts: configurations and functions needed for mysql database conection
 * paths.ts: all used files paths in different modules (data files, screenshots, ...)
 * screenshot.css: visual testing configuration for dynamic pages
 
-#### 11- reports/:
+#### 14- reports/:
 * Allure report data
 * Cucumber report
 * Other needed reports
 
-#### 12- playwright-report/:
+#### 15- playwright-report/:
 * Playwright default reports (html, line, dot, json, junit, ...)
 
-#### 13- test-results/:
+#### 16- test-results/:
 * All results of test cases runs (screenshots, vidos, trace, ...)
 
-#### 14- node_modules/:
+#### 17- node_modules/:
 * All downloaded libraries and modules
 
 ### B. Project configuration files:
@@ -178,8 +186,8 @@ https://code.visualstudio.com/download
 * Secrets
 * Running language
 
-#### 6- storageState.json:
-* To save cookies and optimizing authentication
+#### 6- storageState:
+* To save login cookies and optimizing authentication
 
 #### 7- cucumber.json:
 * Configurations, (features, steps paths) and report for cucumber and BDD framework tests
@@ -238,7 +246,7 @@ https://code.visualstudio.com/download
 ## `Project Structure:`
 *The below is a package diagram for the implemented project structure "Files and folders"*
 
-![Screenshot](PlaywrightFramework.jpg)
+![Screenshot](PlaywrightFramework.JPG)
 
 ## `General instructions and guidelines:`
 
@@ -266,7 +274,7 @@ https://code.visualstudio.com/download
 
 * Do not write any functions if you will not use it
 
-* For every api we create tests in spec file and general used bodies, headers and params under pages directory
+* For every api we create tests in spec file and general used bodies, headers and params under endpoints directory
 
 * For using BDD approach, every feature should has 3 files (feature file - steps - page)
 

@@ -178,16 +178,19 @@ https://code.visualstudio.com/download
 * Secrets
 * Running language
 
-#### 6- cucumber.json:
+#### 6- storageState.json:
+* To save cookies and optimizing authentication
+
+#### 7- cucumber.json:
 * Configurations, (features, steps paths) and report for cucumber and BDD framework tests
 
-#### 7- Jenkinsfile:
+#### 8- Jenkinsfile:
 * Configurations and commands for installing playwright and running tests in Jenkins pipeline
 
-#### 8- .github/workflows/playwright.yml:
+#### 9- .github/workflows/playwright.yml:
 * Configurations and commands for installing playwright and running tests in github actions pipeline
 
-#### 9- .eslintrc.js:
+#### 10- .eslintrc.js:
 * Configurations and rules for code static analysis
 
 ## `How to run?`

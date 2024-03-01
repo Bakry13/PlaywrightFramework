@@ -14,7 +14,6 @@ export class LoginPage{
     readonly loginButtonText = {en:"Login",
     ar:"Login1"};
     readonly loginButtonSelector = "button[type='submit']";
-    readonly loginElementsList = [{element:this.loginButtonSelector, en:"Login", ar:"Login1"}];
     //===========================Constructor=====================
     constructor (page:Page)
     {
@@ -61,8 +60,7 @@ export class LoginPage{
     async assertLoginButtonText(language:string) {
         // await this.page.waitForTimeout(2000); //static wait for 2s
         await this.page.waitForSelector(this.loginButtonSelector, { state: 'visible' }); //Wait for a specific element to be visible
-        // await assertions.assertElementText(this.login_btn,this.loginButtonText, language);
-        await assertions.assertPageText(this.loginElementsList);
+        await assertions.assertElementText(this.login_btn,this.loginButtonText, language);
     }
 }
 

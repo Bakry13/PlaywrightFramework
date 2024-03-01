@@ -16,24 +16,6 @@ async function assertElementText( locator:Locator, expectedText:any, language:st
     await expect(locator).toHaveText(textValue);
 }
 
-async function assertPageText( elementsList: any[]) {
-    const language = process.env.LANGUAGE!;
-    for (let i=0; i<elementsList.length; i++)
-    {
-        let expectedText;
-
-        if (language.toLowerCase().includes("en"))
-        {    
-            expectedText = elementsList[i].en;
-        }
-        else if (language.toLowerCase().includes("ar"))
-        {
-            expectedText = elementsList[i].en;
-        }
-        await expect(elementsList[i].locator).toHaveText(expectedText);
-        }
-}
-
 async function assertElementExist( locator:Locator) {
     await expect(locator).toBeVisible();
 }
@@ -65,24 +47,6 @@ async function validateElementText( locator:Locator, expectedText:any, language:
     await expect.soft(locator).toHaveText(textValue);
 }
 
-async function validatePageText( elementsList: any[]) {
-    const language = process.env.LANGUAGE!;
-    for (let i=0; i<elementsList.length; i++)
-    {
-        let expectedText;
-
-        if (language.toLowerCase().includes("en"))
-        {    
-            expectedText = elementsList[i].en;
-        }
-        else if (language.toLowerCase().includes("ar"))
-        {
-            expectedText = elementsList[i].en;
-        }
-        await expect(elementsList[i].locator).toHaveText(expectedText);
-        }
-}
-
 async function validateElementExist( locator:Locator) {
     await expect.soft(locator).toBeVisible();
 }
@@ -98,5 +62,5 @@ async function validateElementEnabled( locator:Locator) {
 async function validateElementNotEnabled( locator:Locator) {
     await expect.soft(locator).not.toBeEnabled();
 }
-export default { assertElementText, assertElementExist, assertElementNotExist, assertElementEnabled, assertElementNotEnabled, assertPageText,
-    validateElementText, validateElementExist, validateElementNotExist, validateElementEnabled, validateElementNotEnabled, validatePageText };
+export default { assertElementText, assertElementExist, assertElementNotExist, assertElementEnabled, assertElementNotEnabled, 
+    validateElementText, validateElementExist, validateElementNotExist, validateElementEnabled, validateElementNotEnabled };

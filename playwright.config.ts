@@ -52,7 +52,7 @@ export default defineConfig({
   // ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
  //Global setup for authentication firstly
-  // globalSetup: require.resolve('./tests/utilities/setup/global-setup'),
+  globalSetup: require.resolve('./tests/utilities/setup/global-setup'),
   //Default wait is 5s
   expect: {
     timeout: 7000, //timeout for validation
@@ -66,7 +66,7 @@ export default defineConfig({
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
     //Storage state for  autnentication firstly
-    // storageState: 'storageState.json',
+    storageState: 'storageState.json',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     viewport: {width:1920, height:1080},
     // launchOptions: {

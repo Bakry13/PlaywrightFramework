@@ -48,7 +48,7 @@ test.beforeEach('Test case finishing progress', async ({ page }, testInfo) => {
 });
 //====================================Tests==================================
 test.describe('Login page test',() =>{
-        test('Check login button text test case', async ({ page }) => {
+        test.only('Check login button text test case', async ({ page }) => {
             await loginPage.assertLoginButtonText(language);
         });
 

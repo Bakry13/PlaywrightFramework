@@ -1,9 +1,6 @@
-import envSetup from '../../utilities/setup/env-setup';
 import apiEndpoints from '../../utilities/URLs/apiEndpoints';
 import userBody from './user-body';
 
-//=======================Variables==========================
-let baseURL = envSetup.getAPIEnvURL();
 //======================Request Objects=====================
 const userRequestBody =  {
   "title": "foo",
@@ -23,19 +20,19 @@ const userHeaders =  {
 //==========================Requests===========================
 //---------------------------Get 200---------------------------
 async function getUsers(request) {
-  const response = await request.get(baseURL+apiEndpoints.getUsers);
+  const response = await request.get(apiEndpoints.getUsers);
   return response;
 }
 //-------------------------------------------------------------
 async function getSpecificUser(request) {
-  const response = await request.get(baseURL+apiEndpoints.getUsers, {
+  const response = await request.get(apiEndpoints.getUsers, {
     params: userParam
   });
   return response;
 }
 //---------------------------Post 201---------------------------
 async function postUsers(request) {
-  const response = await request.post(baseURL+apiEndpoints.postUser,{
+  const response = await request.post(apiEndpoints.postUser,{
     // headers: userHeaders,
     // data: userBody
     data: userRequestBody

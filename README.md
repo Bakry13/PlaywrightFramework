@@ -75,7 +75,7 @@ https://code.visualstudio.com/download
 * Reading from different types of files (json format, csv and excel sheets)
 
 #### 3- Running in different environments
-* Adding an option to pass the environemnt value through CLI
+* Adding an option to pass the environment value through CLI
 * Adjustment of the baseURL in code and config file according to the running environment
 * Adjustment of different data files according to the running environment
 
@@ -87,7 +87,7 @@ https://code.visualstudio.com/download
 * Adding an option to pass the language through CLI
 
 #### 6- Allure report
-* Adding allure report with more alnaytics and charts options to enhance readability and visibility to the test report
+* Adding allure report with more analytics and charts options to enhance readability and visibility to the test report
 * Adjusting the report to attach (screenshots, videos, trace and console logs)
 
 #### 7- Using BDD framework

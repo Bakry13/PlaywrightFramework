@@ -67,36 +67,36 @@ https://code.visualstudio.com/download
 #### 1- Page Object Model design pattern
 * Separating pages contents in different modules to enhance readability and maintainability
 
-#### 1- Project structure adjustment to modules
+#### 2- Project structure adjustment to modules
 * Dividing the project into modules according to its functionality and usage
 
-#### 2- Using data driven framework
+#### 3- Using data driven framework
 * Separating test data to external files to enhance readability and maintainability
 * Reading from different types of files (json format, csv and excel sheets)
 
-#### 3- Running in different environments
+#### 4- Running in different environments
 * Adding an option to pass the environment value through CLI
 * Adjustment of the baseURL in code and config file according to the running environment
 * Adjustment of different data files according to the running environment
 
-#### 4- Database connection
+#### 5- Database connection
 * Adding a usable module for mysql DB connection
 
-#### 5- Handling different languages
+#### 6- Handling different languages
 * Adding a simple technique to run the test cases in different language
 * Adding an option to pass the language through CLI
 
-#### 6- Allure report
+#### 7- Allure report
 * Adding allure report with more analytics and charts options to enhance readability and visibility to the test report
 * Adjusting the report to attach (screenshots, videos, trace and console logs)
 
-#### 7- Using BDD framework
+#### 8- Using BDD framework
 * Adding the ability to apply BDD test automation framework using cucumber tool
 * Adjustment for cucumber run (feature files, steps and cucumber.json for test runner)
 * Adding cucumber report for logging the test results
 * Adding a simple example of BDD tests
 
-#### 8- Eslint tool for static analysis
+#### 9- Eslint tool for static analysis
 * Adding the eslint dependency for static analysis for typescript code
 * Adding .eslintc.js config file to adjust its rules
 

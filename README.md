@@ -262,7 +262,7 @@ https://code.visualstudio.com/download
 
 * Assertions uses playwright validations and assertion module
 
-* It is recommended to collect cases under descripe group
+* It is recommended to collect cases under describe group
 
 * Files and folders should be named with this formate {firstWord-SecondWord..}
 

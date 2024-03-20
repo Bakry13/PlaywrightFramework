@@ -171,7 +171,7 @@ https://code.visualstudio.com/download
 * General configurations across the project
 
 #### 2- package.json:
-* Project properities
+* Project properties
 * Scripts and keywords
 * Installed dependencies
 

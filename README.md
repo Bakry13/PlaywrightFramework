@@ -242,11 +242,11 @@ https://code.visualstudio.com/download
 
 ## `General instructions and guidelines:`
 
-* Specify files and tags that should be run according to bussiness group and testing needs
+* Specify files and tags that should be run according to business group and testing needs
 
 * Configure package.json file for frequently used commands
 
-* Configure .env file for test environment, secrets and used lanugage
+* Configure .env file for test environment, secrets and used language
 
 * Every test should have its representative name
 

@@ -137,7 +137,7 @@ https://code.visualstudio.com/download
 
 #### 10- tests/utilities/:
 * assertions.ts: general implementation for used assertions in different modules
-* db-actions.ts: configurations and functions needed for mysql database conection
+* db-actions.ts: configurations and functions needed for mysql database connection
 * paths.ts: all used files paths in different modules (data files, screenshots, ...)
 * screenshot.css: visual testing configuration for dynamic pages
 

@@ -29,7 +29,7 @@ https://code.visualstudio.com/download
 
 ### A. Usage of Playwright advantages:
 
-#### 1- Waits and timout adjustment
+#### 1- Waits and timeout adjustment
 * Total run timeout
 * Action timeout
 * Expect timeout

@@ -217,7 +217,7 @@ https://code.visualstudio.com/download
 
         cucumber-js test
 
-### D. Generating/ Openning Allure report:
+### D. Generating/ Opening Allure report:
 
 #### 1- Generate the report:
 

@@ -21,7 +21,7 @@ https://code.visualstudio.com/download
 
 #### 1- Clone the project
 
-#### 2- Run the below command to install the required dependancies
+#### 2- Run the below command to install the required dependencies
 
         npm install
 

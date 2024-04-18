@@ -1,4 +1,4 @@
-# Playwright Framework
+# Playwright Framework [![HitCount](https://hits.dwyl.com/Bakry13/PlaywrightFramework.svg?style=flat-square)](http://hits.dwyl.com/Bakry13/PlaywrightFramework)
 
 *- This project is a base project to build a solid test automation framework using playwright test automation tool and typescript programming language.*
 

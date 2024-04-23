@@ -32,7 +32,7 @@ async function assertElementNotEnabled( locator:Locator) {
     await expect(locator).not.toBeEnabled();
 }
 //===================Soft assertions=========================
-async function validateElementText( locator:Locator, expectedText:any, language:string) {
+async function verifyElementText( locator:Locator, expectedText:any, language:string) {
     // const language = process.env.LANGUAGE!; //we can use this command directly if we do not use BDD wihout passing the language
     let textValue;
 
@@ -47,19 +47,19 @@ async function validateElementText( locator:Locator, expectedText:any, language:
     await expect.soft(locator).toHaveText(textValue);
 }
 
-async function validateElementExist( locator:Locator) {
+async function verifyElementExist( locator:Locator) {
     await expect.soft(locator).toBeVisible();
 }
 
-async function validateElementNotExist( locator:Locator) {
+async function verifyElementNotExist( locator:Locator) {
     await expect.soft(locator).not.toBeVisible();
 }
 
-async function validateElementEnabled( locator:Locator) {
+async function verifyElementEnabled( locator:Locator) {
     await expect.soft(locator).toBeEnabled();
 }
 
-async function validateElementNotEnabled( locator:Locator) {
+async function verifyElementNotEnabled( locator:Locator) {
     await expect.soft(locator).not.toBeEnabled();
 }
 export default { assertElementText, assertElementExist, assertElementNotExist, assertElementEnabled, assertElementNotEnabled, 

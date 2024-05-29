@@ -63,4 +63,4 @@ async function verifyElementNotEnabled( locator:Locator) {
     await expect.soft(locator).not.toBeEnabled();
 }
 export default { assertElementText, assertElementExist, assertElementNotExist, assertElementEnabled, assertElementNotEnabled, 
-    validateElementText, validateElementExist, validateElementNotExist, validateElementEnabled, validateElementNotEnabled };
+    verifyElementText, verifyElementExist, verifyElementNotExist, verifyElementEnabled, verifyElementNotEnabled };
